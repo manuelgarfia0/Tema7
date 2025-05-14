@@ -1,10 +1,11 @@
+package ejercicios;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class Ejercicio7 {
+public class Ejercicio07 {
 
 	static Scanner scanner = new Scanner(System.in);
 
@@ -43,7 +44,7 @@ public class Ejercicio7 {
 			pst.setString(4, email);
 			pst.setString(5, telefono);
 
-			int rs = pst.executeUpdate(sql);
+			int rs = pst.executeUpdate();
 
 			System.out.println("Filas añadidas: " + rs);
 
